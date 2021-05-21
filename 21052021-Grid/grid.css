@@ -4,6 +4,19 @@
     padding: 0px;
     margin: 0px;
 }
+li{
+    background-color: #cc33ff;
+    padding: 20px;
+    display: inline;
+}
+li:hover{
+    background-color: #9900ff;
+}
+a:link, a:visited{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
 body{
     background-color: #ccccff;
 }
@@ -48,4 +61,35 @@ img{
     margin-top: 30px;
     text-align: justify;
     padding: 10px;
+}
+#grid-lateral li{
+    display: block;
+    margin: 3px;
+    text-align: center;
+}
+@media (max-width:1380px){
+    .divContainer{
+        width: 40%;
+        height: 400px;
+        display: inline-block;
+        padding: 5px;
+        margin: 10px;}
+    #grid-main{
+        grid-template-columns: 100px auto;
+    } 
+    li{
+        display: block;
+        padding: 5px;
+        margin: 1px;
+        text-align: center;
+    }
+}
+@media (max-width:750px){
+    .divContainer{
+        width: 95%;
+        height: 400px;
+        display: inline-block;
+        padding: 5px;
+        margin: 10px;
+    }
 }
