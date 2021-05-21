@@ -83,6 +83,9 @@ img{
 .divContainer img:hover{
     transform: scale(1.05);
 }
+header h1{
+    margin: 5px;
+}
 
 @media (max-width:1380px){
     .divContainer{
