@@ -1,0 +1,29 @@
+*{
+    font-family: 'Oswald', sans-serif;
+    margin-left: 20px;
+}
+h1{
+    text-align: center;
+}
+body{
+    background-color: #ccccff;
+}
+.divA:hover{
+    width: 150px;
+    height: 80px;
+    background-color: black;
+    color: white;
+    transform: rotate(25deg);
+}
+.divB:hover{
+    width: 150px;
+    box-shadow: 5px 10px;
+}
+.divC:hover{
+    width: 150px;
+    box-shadow: -10px -10px #00cc00,
+                10px 10px #0033cc;
+}
+#btnAtras{
+    margin-left: 20px;
+}

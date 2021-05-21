@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina:
+entorno: Curso CMV-Accenture
+autor: Pedro García
+fecha: Mayo 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>CMV - Accenture - 20/05 - Posicionamiento 01</title>
+	
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	
+	<!-- una hoja de estilos externa-->
+	
+	<!-- una hoja de estilos personalizada-->
+	<link href="Modelo.css" rel="stylesheet"/>
+	
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+		* {
+			font-family: 'Nunito', sans-serif;
+		}
+		
+		body {
+			background: rgba(0, 0, 128, 0.1); /* Azul al 10% */
+            margin: 0px;
+            
+		}
+        
+        #cajaVerde{
+            width: 300px;
+            height: 200px;
+            background-color: green;
+            
+        }
+        #cajaVerde p{
+            position: relative;
+            top: 50%;
+            text-align: center;
+
+        }
+        #cajaAmarilla{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+        }
+        #cajaAmarilla p{
+            position: relative;
+            top: 50%;
+            text-align: center;
+        }
+        #contenedor{
+            display: flex;
+        }
+        #cajaAzul{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+        }
+        #cajaAzul p{
+            position: relative;
+            top: 50%;
+            text-align: center;
+        }
+        #cajaBlanca{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            margin: 10px;
+            position: absolute;
+            position: sticky;
+            position: -webkit-sticky;
+            left: 100px;
+        }
+        #cajaBlanca p{
+            position: relative;
+            top: 50%;
+            text-align: center;
+        }
+        p{
+            margin: 0px;
+        }
+
+	</style>
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	<script src="00-modelo.js"></script>
+	
+	<!-- scripts personalizados Javascript o JQuery -->
+	<script>
+		// aqui el codigo ...
+		function comenzar(){
+			//codigo aqui de la función
+		}
+	</script>
+</head>
+
+
+
+<body onload="comenzar()"> <!--carga la funcion comenzar-->
+
+	<!-- cabecera de pagina -->
+	<header>
+
+	</header>
+	
+	<!-- bloque de contenido de la pagina -->
+	<main>
+        
+        <div id="cajaAzul">
+            <p>Caja Azul</p>
+        </div>
+        <div id="contenedor">
+            <div id="cajaVerde">
+                <div id="cajaAmarilla">
+                    <p>Caja Amarilla</p>
+                </div>
+                <div id="cajaBlanca">
+                    <p>Caja Blanca</p>
+                </div>
+                    <p>Caja Verde</p>
+            </div> 
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</main>
+
+
+	<!-- pie de pagina -->
+	<footer>
+		<br/><br/><br/>
+		<div>&copy; 2021 <a href="" target="_blank">Pedro García</a></div>
+	</footer>
+
+	<script>
+		// seccion de codigo javascript 
+
+	</script>
+</body>
+</html>
+

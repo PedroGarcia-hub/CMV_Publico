@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pos 02</title>
+    <style>
+        body {
+			background: rgba(0, 0, 128, 0.1); /* Azul al 10% */
+            margin: 0px;
+		}
+        #cajaVerde{
+            position: relative;
+            width: 50%;
+        }
+        #cajaVerde img{
+            width: 100%;
+            height: 100%;
+        }
+        #cajaAmarilla{
+            bottom: 0px;
+            background-color: rgba(255, 255, 255, 0.3);
+            position: absolute;
+            color: white;
+            width: 50%;
+            right: 50%;
+        }
+        p{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="cajaVerde">
+        <img src="../media/Grib_skov.jpg">
+        <div id="cajaAmarilla">
+            <p>Esto es un bosque</p>
+        </div>
+    </div>
+</body>
+</html>

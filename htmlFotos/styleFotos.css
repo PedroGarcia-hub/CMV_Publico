@@ -1,0 +1,41 @@
+*{
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #ccccff;
+}
+div{
+    text-align: center;
+}
+figure{
+    width: 33%;
+    height: 500px;
+    display: inline-block;
+    padding: 5px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+h1{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+@media (max-width:750px){
+    figure{
+        width: 75%;
+        height: 400px;
+        display: inline-block;
+        padding: 5px;
+        margin: 10px;
+    }
+    }
+a{
+    margin-left: 20px;
+}
+
