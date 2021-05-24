@@ -8,6 +8,7 @@ li{
     background-color: #cc33ff;
     padding: 20px;
     display: inline;
+    font-size: large;
 }
 li:hover{
     background-color: #9900ff;
@@ -32,7 +33,7 @@ body{
 #grid-img{
     grid-column-start: 2;
     grid-row-start: 2;
-    width: 35%;
+    width: 500px;
     margin-left: 25%;
 }
 #grid-superior{
