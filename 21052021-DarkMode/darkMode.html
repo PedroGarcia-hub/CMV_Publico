@@ -7,6 +7,7 @@
     <title>Modo Noche</title>
     <link rel="stylesheet" href="darkMode.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../17052021-Animaciones/animaciones.html">Animaciones</a></li>
             </ul>
-            <button onclick="darkMode()">Modo noche</button>
+            
         </div>
         <div id="grid-lateral">
             <ul style="list-style-type: none;">
@@ -69,12 +70,13 @@
                 </div>
 			</div>
         </div>
+        <button id="btn_dark_mode">Modo noche</button>
     </div>
     <script>
-        function darkMode(){
-            var element = document.body;
-            element.classList.toggle("dark-mode")
-        }
+        $('#btn_dark_mode').click(function(){
+            $("body").toggleClass("dark-mode")
+        });
+        
     </script>
 </body>
 </html>
