@@ -23,7 +23,7 @@ body{
 }
 #grid-main{
     display: grid;
-    grid-template-columns: 250px auto;
+    grid-template-columns: 33% auto;
     grid-template-rows: 100px auto;
 }
 #grid-lateral{
@@ -96,6 +96,9 @@ header h1{
     font-size: 20px;
     text-align: justify;
     padding: 10px;
+}
+.carousel-inner{
+    
 }
 
 @media (max-width:1380px){
