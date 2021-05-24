@@ -23,7 +23,7 @@ body{
 #grid-main{
     display: grid;
     grid-template-columns: 250px auto;
-    grid-template-rows: 150px auto;
+    grid-template-rows: 100px auto;
 }
 #grid-lateral{
     grid-column-start: 1;
@@ -88,8 +88,13 @@ img{
 header h1{
     margin: 5px;
 }
-.carousel-caption h3{
-    margin-bottom: 40px;
+.carousel-inner h3{
+    text-align: center;
+}
+.carousel-inner p{
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
 }
 
 @media (max-width:1380px){
