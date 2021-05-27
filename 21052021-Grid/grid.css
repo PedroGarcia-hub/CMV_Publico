@@ -34,7 +34,7 @@ body{
     grid-row-start: 2;
 }
 #grid-superior{
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-row-start: 1;
 }
 header h1{
@@ -103,6 +103,13 @@ header h1{
         margin: 1px;
         text-align: center;
     }
+    #menu-vertical{
+        position: absolute;
+        bottom: 0;
+    }  
+    #grid-superior{
+        grid-column-start: 1;
+    } 
 }
 @media (max-width:750px){
     .divContainer{

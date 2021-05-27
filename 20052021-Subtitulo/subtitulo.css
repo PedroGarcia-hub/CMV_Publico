@@ -72,6 +72,10 @@ figcaption{
         display: inline-block;
         padding: 5px;
         margin: 10px;}
+    li{
+            display: block;
+            width: 200px;
+        }
 }
 @media (max-width:750px){
     .divContainer{

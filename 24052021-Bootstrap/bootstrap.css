@@ -23,7 +23,7 @@ body{
 }
 #grid-main{
     display: grid;
-    grid-template-columns: 33% auto;
+    grid-template-columns: 250px auto;
     grid-template-rows: 100px auto;
 }
 #grid-lateral{
@@ -37,7 +37,7 @@ body{
     margin-left: 25%;
 }
 #grid-superior{
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-row-start: 1;
 }
 header h1{
@@ -116,6 +116,13 @@ header h1{
         padding: 5px;
         margin: 1px;
         text-align: center;
+    }
+    #grid-superior{
+        grid-column-start: 1;
+    }
+    #menu-vertical{
+        position: absolute;
+        bottom: 0;
     }
 }
 @media (max-width:750px){
