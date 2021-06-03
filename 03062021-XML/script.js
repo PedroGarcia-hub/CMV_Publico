@@ -7,8 +7,8 @@ function leerXML(){
             cargarArray(this);
         }
     };
-    //xhr.open("GET", "https://github.com/PedroGarcia-hub/CMV_Publico/blob/main/03062021-XML/datos.xml",true);
-    xhr.open("GET", 'datos.xml', true);
+    xhr.open("GET", "https://github.com/PedroGarcia-hub/CMV_Publico/blob/main/03062021-XML/datos.xml",true);
+    //xhr.open("GET", 'datos.xml', true);
     xhr.send();
 }
 
