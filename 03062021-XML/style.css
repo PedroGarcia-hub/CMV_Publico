@@ -1,0 +1,22 @@
+:root {
+    --azulclaro: #e6f2ff;
+  }
+  
+  * {
+      font-family: 'Nunito', sans-serif;
+      text-transform:none;
+      box-sizing:border-box;
+      margin:0px;
+      padding:0px;
+  }
+  
+  body {
+      background: var(--azulclaro);
+  }
+  img{
+      height: 100px;
+      width: 100px;
+  }
+  
+  
+  

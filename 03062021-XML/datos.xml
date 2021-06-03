@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orla>
+    <elemento>
+        <nombre>El Archivo de las Tormentas</nombre>
+        <foto>../media/ArchivoTormentas.jpg</foto>
+        <pie>Brandon Sanderson</pie>
+        <detalle>...</detalle>
+    </elemento>
+    <elemento>
+        <nombre>La Rueda del Tiempo</nombre>
+        <foto>../media/wheeloftimeImg.jpg</foto>
+        <pie>Robert Jordan y Brandon Sanderson</pie>
+        <detalle>...</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Nacidos de la Bruma</nombre>
+        <foto>../media/mistborn.jpg</foto>
+        <pie>Brandon Sanderson</pie>
+        <detalle>...</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Malaz: El Libro de los Caídos</nombre>
+        <foto>../media/malazImg.jpg</foto>
+        <pie>Steven Erikson y Ian Camerson</pie>
+        <detalle>...</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Legendarium</nombre>
+        <foto>../media/legendariumTierraMedia.jpg</foto>
+        <pie>J.R.R. Tolkien</pie>
+        <detalle>...</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Canción de Hielo y Fuego</nombre>
+        <foto>../media/canciondeHieloyFuego.jpg</foto>
+        <pie>George R.R. Martin</pie>
+        <detalle>...</detalle>
+    </elemento>
+    <elemento>
+        <nombre>El Elfo Oscuro</nombre>
+        <foto>../media/elfoOscuro.jpg</foto>
+        <pie>R.A. Salvatore</pie>
+        <detalle>...</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Crónica de un Asesino de Reyes</nombre>
+        <foto>../media/asesinoDeReyes.jpg</foto>
+        <pie>Patrick Rothfuss</pie>
+        <detalle>...</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Harry Potter</nombre>
+        <foto>../media/harryPotter.jpg</foto>
+        <pie>J.K. Rowling</pie>
+        <detalle>...</detalle>
+    </elemento>
+</orla>
