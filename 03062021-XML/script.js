@@ -18,7 +18,7 @@ function cargarArray(xml){
 
     var x = xmlDoc.getElementsByTagName("elemento");
 
-    tabla = '<table><tr><th>NOMBRE</th><th>FOTO</th><th>PIE</th><th>DETALLE</th></tr>';
+    tabla = '<table><tr><th>NOMBRE</th><th>FOTO</th><th>AUTOR</th><th>DETALLE</th></tr>';
     for(i = 0; i < x.length; i++){
         nombre = x[i].getElementsByTagName('nombre')[0].childNodes[0].nodeValue;
         foto = x[i].getElementsByTagName('foto')[0].childNodes[0].nodeValue;
@@ -36,7 +36,7 @@ function cargarArray(xml){
 
 function buscarElemento(){
     let input = $("#nombre").val();
-    let tabla = "<table><tr><th>NOMBRE</th><th>FOTO</th><th>PIE</th><th>DETALLE</th></tr>";
+    let tabla = "<table><tr><th>NOMBRE</th><th>FOTO</th><th>AUTOR</th><th>DETALLE</th></tr>";
     for(i = 0; i < registrados.length; i++){
         if(registrados[i][0] == input){
             tabla += "<tr><td>" + registrados[i][0] + "</td><td><img src=" + registrados[i][1] + "></td><td>" + registrados[i][2] + "</td><td>" + registrados[i][3] + "</td></tr>";
