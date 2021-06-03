@@ -31,6 +31,7 @@ function cargarArray(xml){
     }
     tabla += '</table>';
     document.getElementById('mostrar').innerHTML = tabla;
+    $("#restart").hide();
 }
 
 function buscarElemento(){
@@ -46,5 +47,6 @@ function buscarElemento(){
             $("#mostrar").text("No se ha encontrado nigún registro");
         }
     }
+    $("#restart").show();
     
 }
