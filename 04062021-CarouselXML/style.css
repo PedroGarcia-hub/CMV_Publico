@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+}
+.carousel-inner{
+    margin-left: 25%;
+}
+.carousel-inner div{
+    height: 50%;
+    width: 50%;
+}
+p, h3{
+    text-align: center;
+}
