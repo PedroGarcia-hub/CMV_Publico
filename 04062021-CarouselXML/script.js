@@ -26,13 +26,13 @@ function loadContent(xml){
         photo = x[i].getElementsByTagName('foto')[0].childNodes[0].nodeValue;
         foot = x[i].getElementsByTagName('pie')[0].childNodes[0].nodeValue;
 
-        content +=`
-                    <div class="carousel-item active">
-                        <h3>${name}</h3>
-                        <img class="d-block w-100" src="${photo}" alt="First slide">
-                        <p>${foot}</p>
-                    </div>
-        `
+        content +='<div class="carousel-item active"> '+
+                        '<h3>'+name+'</h3>'+
+                        '<img class="d-block w-100" src="'+photo+'" alt="First slide">'+
+                        '<p>'+foot+'</p>'+
+                    '</div>'
+
+        
         
         element = [name, photo, foot];
         loaded.push(element);
