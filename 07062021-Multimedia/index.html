@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Multimedia</title>
 </head>
+
 <body>
+
     <head>
         <h1>7 de mayo - Etiquetas multimedia</h1>
     </head>
@@ -25,13 +30,12 @@
         </audio>
         <br>
         <h3>SVG:</h3>
-        <svg width = "400" height = "100" class="element">
-            <rect width="400" height="100" style="fill:rgb(0,0,0);stroke-width:10;stroke:rgb(255,0,0)"/>
+        <svg width="400" height="100" class="element">
+            <rect width="400" height="100" style="fill:rgb(0,0,0);stroke-width:10;stroke:rgb(255,0,0)" />
         </svg>
         <br>
         <h3>Canvas:</h3>
-        <canvas id="myCanvas" class="element" width="200" height="100"
-        style="border:1px solid #c3c3c3;">
+        <canvas id="myCanvas" class="element" width="200" height="100" style="border:1px solid #c3c3c3;">
         </canvas>
     </main>
     <footer>
@@ -41,7 +45,8 @@
         var canvas = document.getElementById("myCanvas");
         var ctx = canvas.getContext("2d");
         ctx.fillStyle = "#6699ff";
-        ctx.fillRect(0,0, 200, 50);
+        ctx.fillRect(0, 0, 200, 50);
     </script>
 </body>
+
 </html>
