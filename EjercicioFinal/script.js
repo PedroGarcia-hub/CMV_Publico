@@ -7,40 +7,42 @@ function readXML() {
             loadElements(this);
         }
     };
-    xhr.open("GET", "data.xml", true);
+    xhr.open("GET", "datos.xml", true);
     xhr.send();
 }
 
 function loadElements(xml) {
-    let name, photo, foot, details;
-    let xmlDoc = xml.reponseXML;
-    let element = [];
+    var name, photo, foot, details;
+    var xmlDoc = xml.responseXML;
+    var element = [];
 
     var x = xmlDoc.getElementsByTagName("elemento");
 
-    for (i = 0; i < x.length; i++) {
-        name = x[i].getElementsByTagName('nombre')[0].childNodes[0].nodeValues;
-        photo = x[i].getElementsByTagName('foto')[0].childNodes[0].nodeValues;
-        foot = x[i].getElementsByTagName('pie')[0].childNodes[0].nodeValues;
-        details = x[i].getElementsByTagName('detalle')[0].childNodes[0].nodeVales;
+    for(i = 0; i < x.length; i++){
+        name = x[i].getElementsByTagName('nombre')[0].childNodes[0].nodeValue;
+        photo = x[i].getElementsByTagName('foto')[0].childNodes[0].nodeValue;
+        foot = x[i].getElementsByTagName('pie')[0].childNodes[0].nodeValue;
+        details = x[i].getElementsByTagName('detalle')[0].childNodes[0].nodeValue;
 
         content += `<div class="flip-box">
                         <div class="flip-box-inner">
-                            <div class="flip-box-front>
-                                <img src=${photo}>
-                            </div>
-                            <div class="flip-box-back>
-                                <h2>${name}</h2></br>
-                                <p>${foot}</p>
-                            </div>
+                        <div class="flip-box-front">
+                            <img src=${photo}>
                         </div>
-                    </div>`;
+                        <div class="flip-box-back">
+                            <h2>${name}</h2></br>
+                            <p>${foot}</p>
+                        </div>
+                        </div>
+                    </div>
+        `;
 
         element = [name, photo, foot, details];
         loaded.push(element);
     }
 
     document.getElementById('elementsZone').innerHTML = content;
+    $("#restart").hide();
 }
 
 function findElements() {
