@@ -28,7 +28,7 @@ function loadElements(xml) {
         content += `<div class="flip-box">
                         <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <img src="${photo}">
+                            <img src="${photo}" alt="${nombre}">
                         </div>
                         <div class="flip-box-back">
                             <h2>${name}</h2></br>
@@ -55,7 +55,7 @@ function findElements() {
             content += `<div class="flip-box">
                             <div class="flip-box-inner">
                                 <div class="flip-box-front">
-                                    <img src="${loaded[i][1]}">
+                                    <img src="${loaded[i][1]}" alt="${loaded[i][0]}">
                                 </div>
                                 <div class="flip-box-back">
                                     <h2>${loaded[i][0]}</h2></br>
