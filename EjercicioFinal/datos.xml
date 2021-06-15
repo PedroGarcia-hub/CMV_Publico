@@ -54,4 +54,22 @@
         <pie>J.K. Rowling</pie>
         <detalle>Harry Potter es una serie de novelas fantásticas escrita por la autora británica J. K. Rowling, en la que se describen las aventuras del joven aprendiz de magia y hechicería Harry Potter y sus amigos Hermione Granger y Ron Weasley, durante los años que pasan en el Colegio Hogwarts de Magia y Hechicería.</detalle>
     </elemento>
+    <elemento>
+        <nombre>Geralt de Rivia</nombre>
+        <foto>../media/geraltRivia.jpg</foto>
+        <pie>J.K. Rowling</pie>
+        <detalle>La Saga de Geralt de Rivia o la Saga del brujo es una serie de cuentos y novelas de fantasía heroica creada por el escritor polaco Andrzej Sapkowski. Consta de diez libros.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>Elantris</nombre>
+        <foto>../media/elantris.jpg</foto>
+        <pie>Brandon Sanderson</pie>
+        <detalle>Elantris es una novela de fantasía independiente de Brandon Sanderson, publicada en abril de 2005 por Tor Books. Este es el primer libro de Sanderson distribuido de manera amplia. El libro lleva el nombre de la ciudad en ruinas, cuyos habitantes "malditos" son el centro de la trama del libro.</detalle>
+    </elemento>
+    <elemento>
+        <nombre>El Ciclo de Terramar</nombre>
+        <foto>../media/cicloTerramar.jpg</foto>
+        <pie>Ursula K. Le Guin</pie>
+        <detalle>Terramar es un mundo ficticio creado por Ursula K. Le Guin en el que se desarrolla la serie de novelas fantásticas conocidas como «El ciclo de Terramar». el primer relato ambientado en este universo fue el cuento «La palabra que libera», publicado en 1964, pero que se hizo famosa con la novela Un mago de Terramar, publicada en 1968. </detalle>
+    </elemento>
 </orla>
