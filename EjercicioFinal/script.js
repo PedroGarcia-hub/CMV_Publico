@@ -1,4 +1,4 @@
-let content;
+let content = "";
 let loaded = [];
 function readXML() {
     var xhr = new XMLHttpRequest();
@@ -15,6 +15,7 @@ function loadElements(xml) {
     var name, photo, foot, details;
     var xmlDoc = xml.responseXML;
     var element = [];
+    content = "";
 
     var x = xmlDoc.getElementsByTagName("elemento");
 
@@ -27,11 +28,12 @@ function loadElements(xml) {
         content += `<div class="flip-box">
                         <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <img src=${photo}>
+                            <img src="${photo}">
                         </div>
                         <div class="flip-box-back">
                             <h2>${name}</h2></br>
-                            <p>${foot}</p>
+                            <h4>${foot}</h4>
+                            <p class="details">${details}</p>
                         </div>
                         </div>
                     </div>
@@ -46,17 +48,19 @@ function loadElements(xml) {
 }
 
 function findElements() {
-    let input = $('#name').val();
+    let input = $('#txtName').val();
+    content = "";
     for (i = 0; i < loaded.length; i++) {
         if (loaded[i][0] == input) {
             content += `<div class="flip-box">
                             <div class="flip-box-inner">
-                                <div class="flip-box-front>
-                                    <img src=${loaded[i][0]}>
+                                <div class="flip-box-front">
+                                    <img src="${loaded[i][1]}">
                                 </div>
-                                <div class="flip-box-back>
-                                    <h2>${loaded[i][1]}</h2></br>
-                                    <p>${loaded[i][2]}</p>
+                                <div class="flip-box-back">
+                                    <h2>${loaded[i][0]}</h2></br>
+                                    <h4>${loaded[i][2]}</h4>
+                                    <p class="details">${loaded[i][3]}</p>
                                 </div>
                             </div>
                         </div>`
@@ -68,3 +72,12 @@ function findElements() {
     }
     $('#restart').show();
 }
+
+function horizontalMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }

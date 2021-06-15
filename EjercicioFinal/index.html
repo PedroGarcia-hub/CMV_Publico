@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <title>Ejercicio Final</title>
 </head>
+
 <body onload="readXML()">
     <header>
         <h1>Ejercicio Final CMV-Accenture</h1>
     </header>
     <main>
-        <div id="menuHorizontal"></div>
+        <div id="menuHorizontal">
+            <div class="topnav" id="myTopnav">
+                <a href="../index.html" >Inicio</a>
+                <a href="../htmlFotos/htmlFotos.html">Fotos <br> [Tarea 1]</a>
+                <a href="../17052021-menuHorizontal/menuHorizontal.html">Menú horizontal</a>
+                <a href="../20052021-Subtitulo/subtitulo.html">Fotos con subtítulos</a>
+                <a href="../21052021-Grid/grid.html">Grid <br> [Tarea 2]</a>
+                <a href="../21052021-DarkMode/darkMode.html">Modo noche <br> [Tarea 2]</a>
+                <a href="../24052021-EstiloConLess/index.html">Estilos con Less <br> [Tarea 3]</a>
+                <a href="../24052021-Bootstrap/bootstrap.html">Slider Bootstrap <br> [Tarea 4]</a>
+                <a href="../03062021-XML/index.html">Imágenes desde XML <br> [Tarea 5]</a>
+                <a href="../04062021-FlexBox/index.html">Posicionamiento con Flex <br> [Tarea 5]</a>
+                <a href="../07062021-Multimedia/index.html">Etiquetas multimedia <br> [Tarea 7]</a>
+                <a href="">Drupal <br> [Tarea 7]</a>
+                <a href="" class="active">Ejercicio Final</a>
+                <a href="javascript:void(0);" class="icon" onclick="horizontalMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
         <br>
         <div id="menuTools">
-            <input type="text" name="nombre" id="txtName">
+            <input type="text" name="nombre" id="txtName" placeholder="Nombre de la saga...">
             <button onclick="findElements()">Buscar</button>
             <button id="restart" onclick="readXML()" hidden>Reiniciar</button>
+            <button id="darkMode">Modo noche</button>
         </div>
         <br>
         <div id="elementsZone"></div>
@@ -29,4 +51,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
