@@ -9,7 +9,6 @@ h1{
     background-color: transparent;
     width: 30%;
     height: 300px;
-    border: 1px solid #f1f1f1;
     perspective: 1000px;
     margin: 10px;
     margin-bottom: 20px;
@@ -38,7 +37,7 @@ h1{
   }
   
 .flip-box-front {
-    background-color: white;
+    background-color: transparent;
     color: black;
   }
   

@@ -85,4 +85,5 @@ function horizontalMenu() {
 function darkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
+    $('.flip-box-front').classList.toggle("dark-mode");
 }
