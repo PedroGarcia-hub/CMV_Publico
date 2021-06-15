@@ -78,6 +78,11 @@ h1{
   display: none;
 }
 
+/*Modo noche*/
+.dark-mode{
+  background-color: #595959;
+  color: white;
+}
 
   /*CSS propio*/
 *{
@@ -97,6 +102,9 @@ h1{
     padding-left: 3%;
     padding-right: 3%;
     text-align: justify;
+}
+#darkModeBtn{
+  margin-left: 20px;
 }
 
 

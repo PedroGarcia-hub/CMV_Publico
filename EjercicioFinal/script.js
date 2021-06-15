@@ -19,7 +19,7 @@ function loadElements(xml) {
 
     var x = xmlDoc.getElementsByTagName("elemento");
 
-    for(i = 0; i < x.length; i++){
+    for (i = 0; i < x.length; i++) {
         name = x[i].getElementsByTagName('nombre')[0].childNodes[0].nodeValue;
         photo = x[i].getElementsByTagName('foto')[0].childNodes[0].nodeValue;
         foot = x[i].getElementsByTagName('pie')[0].childNodes[0].nodeValue;
@@ -28,7 +28,7 @@ function loadElements(xml) {
         content += `<div class="flip-box">
                         <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <img src="${photo}" alt="${nombre}">
+                            <img src="${photo}" alt="${name}">
                         </div>
                         <div class="flip-box-back">
                             <h2>${name}</h2></br>
@@ -66,7 +66,7 @@ function findElements() {
                         </div>`
             document.getElementById('elementsZone').innerHTML = content;
             break;
-        }else{
+        } else {
             $('#elementsZone').text('No se han encontrado ningún registro');
         }
     }
@@ -76,8 +76,13 @@ function findElements() {
 function horizontalMenu() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
-      x.className += " responsive";
+        x.className += " responsive";
     } else {
-      x.className = "topnav";
+        x.className = "topnav";
     }
-  }
+}
+
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}

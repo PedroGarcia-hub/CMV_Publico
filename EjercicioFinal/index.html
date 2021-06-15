@@ -40,9 +40,9 @@
         <div id="menuTools">
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" id="txtName">
-            <button onclick="findElements()">Buscar</button>
-            <button id="restart" onclick="readXML()" hidden>Reiniciar</button>
-            <button id="darkMode">Modo noche</button>
+            <input type="image" src="../icons/buscar.png" onclick="findElements()">
+            <input id="restart" type="image" src="../icons/flecha-izquierda.png" onclick="readXML()">
+            <input id="darkModeBtn" type="image" src="../icons/sleep-mode.png" onclick="darkMode()">
         </div>
         <br>
         <div id="elementsZone"></div>
