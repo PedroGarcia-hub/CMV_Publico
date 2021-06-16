@@ -1,10 +1,4 @@
-*{
-  font-family: 'Open Sans Condensed', sans-serif;  
-}
-h1{
-  text-align: center;
-}
-
+/*CSS del front y back de las imágenes*/
 .flip-box {
     background-color: transparent;
     width: 30%;
@@ -77,7 +71,7 @@ h1{
   display: none;
 }
 
-/*Modo noche*/
+/*CSS de la clase modo noche*/
 .dark-mode{
   background-color: #595959;
   color: white;
@@ -86,7 +80,15 @@ h1{
   /*CSS propio*/
 *{
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
   }
+body{
+  background-color: #b3d9ff;
+}
+h1{
+  text-align: center;
+  font-size: 40px;
+}
 #elementsZone{
     display: flex;
     flex-wrap: wrap;
@@ -103,6 +105,10 @@ h1{
     padding-right: 3%;
     text-align: justify;
 }
+#menuTools{
+  font-size: 20px;
+  margin: 2px;
+}
 .btnTools{
   margin-left: 20px;
 }
@@ -111,7 +117,7 @@ footer img{
   max-height: 50%;
 }
 
-  /*Responsive*/
+  /*CSS para responsive*/
 
   @media(max-width: 1350px){
     .flip-box{

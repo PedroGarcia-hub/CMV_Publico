@@ -1,5 +1,10 @@
 let content = "";
 let loaded = [];
+
+
+/**
+ *funcion para conectar con el XML 
+ */
 function readXML() {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
@@ -11,6 +16,10 @@ function readXML() {
     xhr.send();
 }
 
+/**
+ * Funcion para leer los elementos del XML y mostralos en el html
+ * @param {*} xml XML a leer
+ */
 function loadElements(xml) {
     var name, photo, foot, details;
     var xmlDoc = xml.responseXML;
@@ -47,6 +56,9 @@ function loadElements(xml) {
     $("#restart").hide();
 }
 
+/**
+ * Funcion para buscar elementos por nombre y mostrarlos en el html
+ */
 function findElements() {
     let input = $('#txtName').val();
     content = "";
@@ -73,6 +85,9 @@ function findElements() {
     $('#restart').show();
 }
 
+/**
+ * Funcion para controlar el menu horizontal de forma responsive
+ */
 function horizontalMenu() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -82,6 +97,9 @@ function horizontalMenu() {
     }
 }
 
+/**
+ * Funcion para cambiar el body a dark mode
+ */
 function darkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
