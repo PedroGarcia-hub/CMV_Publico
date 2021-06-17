@@ -97,8 +97,8 @@ h1{
 #elementsZone img{
   max-width: 100%;
   max-height: 100%;
-  min-width: 75%;
-  min-height: 75%;
+  min-width: 60%;
+  min-height: 60%;
 }
 .details{
     padding-left: 3%;
