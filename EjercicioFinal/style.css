@@ -107,14 +107,10 @@ h1{
 }
 #menuTools{
   font-size: 20px;
-  padding: 10px;
+  margin-bottom: 15px;
 }
 .btnTools{
   margin-left: 20px;
-  padding: 5px;
-}
-.btnTools:hover{
-  background-color: dodgerblue;
 }
 footer img{
   max-width: 50%;
