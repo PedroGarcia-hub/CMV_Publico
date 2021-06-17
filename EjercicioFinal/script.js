@@ -63,7 +63,7 @@ function findElements() {
     let input = $('#txtName').val();
     content = "";
     for (i = 0; i < loaded.length; i++) {
-        if (loaded[i][0] == input) {
+        if (loaded[i][2] == input) {
             content += `<div class="flip-box">
                             <div class="flip-box-inner">
                                 <div class="flip-box-front">
@@ -76,11 +76,10 @@ function findElements() {
                                 </div>
                             </div>
                         </div>`
-            document.getElementById('elementsZone').innerHTML = content;
-            break;
         } else {
             $('#elementsZone').text('No se han encontrado ningún registro');
         }
+        document.getElementById('elementsZone').innerHTML = content;
     }
     $('#restart').show();
 }
