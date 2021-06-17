@@ -17,7 +17,14 @@
 
 <body onload="readXML()">
     <header>
-        <h1>Ejercicio Final CMV-Accenture</h1>
+        <h1>Ejercicio Final - Pedro García</h1>
+        <div id="menuTools">
+            <label for="txtName">Nombre:</label>
+            <input type="text" name="txtName" id="txtName">
+            <input class="btnTools" type="image" src="../icons/buscar.png" onclick="findElements()" alt="Buscar">
+            <input id="restart" class="btnTools" type="image" src="../icons/flecha-izquierda.png" onclick="readXML()" alt="Reiniciar">
+            <input class="btnTools" type="image" src="../icons/sleep-mode.png" onclick="darkMode()" alt="Modo noche">
+        </div>
     </header>
     <main>
         <div id="menuHorizontal">
@@ -39,13 +46,7 @@
             </div>
         </div>
         <br>
-        <div id="menuTools">
-            <label for="txtName">Nombre:</label>
-            <input type="text" name="txtName" id="txtName">
-            <input class="btnTools" type="image" src="../icons/buscar.png" onclick="findElements()" alt="Buscar">
-            <input id="restart" class="btnTools" type="image" src="../icons/flecha-izquierda.png" onclick="readXML()" alt="Reiniciar">
-            <input class="btnTools" type="image" src="../icons/sleep-mode.png" onclick="darkMode()" alt="Modo noche">
-        </div>
+        
         <br>
         <div id="elementsZone"></div>
     </main>
